@@ -1,0 +1,258 @@
+
+.login-container {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.left-panel {
+  flex: 1.2;
+  background-color: #0b111e;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 4rem 5rem;
+  overflow: hidden;
+}
+
+.grid-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-icon {
+  background-color: #22d3ee;
+  color: #0b111e;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.hero-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+  letter-spacing: -1px;
+}
+
+.hero-text .highlight {
+  color: #22d3ee;
+}
+
+.hero-text p {
+  color: #64748b;
+  font-size: 1.1rem;
+  max-width: 500px;
+  line-height: 1.6;
+}
+
+.stats-container {
+  display: flex;
+  gap: 3rem;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.stat-number {
+  color: #38bdf8;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.stat-label {
+  color: #475569;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+
+.right-panel {
+  flex: 0.8;
+  background-color: #090e17;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 2rem;
+  border-left: 1px solid #1e293b;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.form-header {
+  margin-bottom: 2.5rem;
+}
+
+.form-header h2 {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.form-header p {
+  color: #64748b;
+  font-size: 0.875rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  color: #94a3b8;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.input-icon {
+  position: absolute;
+  left: 14px;
+  color: #64748b;
+}
+
+.input-wrapper input {
+  width: 100%;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 14px 14px 14px 44px;
+  color: #f8fafc;
+  font-size: 0.875rem;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-wrapper input:focus {
+  border-color: #22d3ee;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 14px;
+  background: none;
+  border: none;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.toggle-password:hover {
+  color: #94a3b8;
+}
+
+.submit-btn {
+  background-color: #22d3ee;
+  color: #090e17;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-top: 0.5rem;
+  transition: background-color 0.2s;
+}
+
+.submit-btn:hover {
+  background-color: #06b6d4;
+}
+
+.demo-info {
+  margin-top: 1.5rem;
+  background-color: #0f172a;
+  border: 1px solid #1e293b;
+  border-radius: 8px;
+  padding: 12px;
+  text-align: center;
+}
+
+.demo-info p {
+  color: #38bdf8;
+  font-size: 0.8rem;
+  font-family: monospace;
+}
+
+.help-btn {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #1e293b;
+  color: #94a3b8;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+
+@media (max-width: 968px) {
+  .login-container {
+    flex-direction: column;
+  }
+  .left-panel, .right-panel {
+    flex: none;
+    width: 100%;
+    min-height: 50vh;
+  }
+  .left-panel {
+    padding: 3rem 2rem;
+  }
+}

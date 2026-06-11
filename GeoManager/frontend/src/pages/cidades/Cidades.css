@@ -1,0 +1,83 @@
+@import '../dashboard/Dashboard.css';
+@import '../continentes/Continentes.css'; 
+@import '../paises/Paises.css'; 
+
+.bg-green-dark {
+  background-color: rgba(16, 185, 129, 0.1);
+}
+
+.btn-new-green {
+  background-color: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 18px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-new-green:hover {
+  background-color: #059669;
+}
+
+
+.sidebar-nav .nav-item.green-active {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: var(--green);
+  border-left: 3px solid var(--green);
+}
+
+
+.btn-page.active-green {
+  background-color: rgba(16, 185, 129, 0.2);
+  border-color: var(--green);
+  color: var(--green);
+}
+
+
+.btn-clima {
+  background-color: rgba(16, 185, 129, 0.05);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  color: var(--green);
+  border-radius: 6px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.btn-clima:hover {
+  background-color: rgba(16, 185, 129, 0.15);
+  border-color: var(--green);
+}
+
+
+.modal-body select:focus,
+.modal-body input:focus {
+  border-color: var(--green) !important;
+}
+
+.btn-create-green {
+  background-color: var(--green);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 24px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-create-green:hover {
+  background-color: #059669;
+}
